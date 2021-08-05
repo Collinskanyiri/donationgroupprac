@@ -43,3 +43,11 @@
     color:#666;
     padding:1rem 0;
   }
+
+  .partnership  .box-container .box:hover .image{
+    top:0;
+  }
+
+  .partnership  .box-container .box:hover .content{
+    transform: translateY(100%);
+  }
