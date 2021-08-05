@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@font-face {
+    font-family: geometria;
+    src: url('../css/Geometria/Geometria-Light.ttf') format('truetype');
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+img {
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 30px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("https://unsplash.com/photos/9aAr_EFqYdc/download?force=true&w=1920.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: geometria;
+}
+
+.active {
+    color: #ffc001 !important;
+}
+
+
+/* STYLING OF TAGS IN HEADER ELEMENT */
+
+header nav {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    display: none;
+    color: #FFA401;
+    font-size: 2rem;
+}
+
+#nav-items {
+    display: flex;
+    list-style-type: none;
+}
+
+#nav-items a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 2em;
+    font-size: 17px;
+    transition: ease-in-out .5s;
+}
+
+#nav-items a:hover {
+    color: #FFA401;
+}
+
+
+/* BODY......... */
+
+h1 {
+    text-indent: 2rem;
+    font-size: 4rem;
+    color: #FFA401;
+    ;
+    font-weight: bold;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    /* justify-items: center;
+  align-content: center; */
+    grid-gap: 5%;
+}
+
+.contact_holder {
+    background: rgba(250, 250, 250, 0.28);
+    padding: 30px;
+    margin: 0px 15% 50px 15%;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.up {
+    margin-bottom: 20px;
+}
+
+#Name,
+#email,
+#message {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #FFA401;
+    border-radius: 5px;
+    text-indent: 10px;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: #404040;
+    font-size: 1.2em;
+}
+
+textarea {
+    width: 96%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    /* background-color: #f8f8f8; */
+    font-size: 1.2rem;
+    resize: none;
+    border: 1px solid #FFA401;
+}
+
+.submit {
+    width: 25%;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FFA401;
+    color: #fff;
+    position: relative;
+    left: 75%;
+    margin-top: 10px;
+    transition: ease-in-out .3s;
+}
+
+.submit:hover {
+    background-color: #ffc001;
+    transform: scale(1.03);
+}
+
+
+/* FOR RESPONSIVENESS ON MOBILE */
+
+@media screen and (max-width: 600px) {
+    .form-style div input.align-left {
+        float: none;
+    }
+    .form-style div input.align-right {
+        float: none;
+    }
+    .form-style div .field-split {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-style div {
+        margin-bottom: 0px;
+    }
+}
+
+
+/* 40 volunteer.html */
+
+@media(max-width: 500px) {
+    body {
+        background-color: #364D2E;
+    }
+    .fa {
+        margin-right: 10px;
+    }
+    #nav-items {
+        display: none;
+        flex-flow: column wrap;
+        background: rgba(17, 16, 16, 0.9);
+        color: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        transition: 500ms ease-in-out all;
+        margin: 0px;
+    }
+    #nav-items li {
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+    i.fa-times {
+        font-size: 100px;
+        margin-top: 0px;
+        align-self: center;
+        margin-left: 30px;
+        opacity: 0.5;
+        mix-blend-mode: hard-light;
+    }
+    #nav-items li a {
+        margin: auto;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .icon {
+        display: block;
+    }
+    .first-div {
+        margin: auto;
+    }
+    .donate-btn {
+        background-color: darkgreen;
+        border: none;
+    }
+    .get-involved-btn {
+        display: none;
+        vertical-align: middle;
+    }
+    footer {
+        padding: 10px;
+    }
+    .main {
+        display: block;
+    }
+    form {
+        width: 90%;
+        float: center;
+        padding-left: 15px;
+    }
+    .contact_holder {
+        padding: 10px;
+    }
+    .summit {
+        margin-bottom: 15px !important;
+    }
+}
