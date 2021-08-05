@@ -1,7 +1,7 @@
 .partnership .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap:1rem;
   }
   
   .partnership  .box-container .box{
@@ -15,8 +15,8 @@
   }
   
   .partnership  .box-container .box .image{
-    height:100%;
-    width:100%;
+    height: auto;
+    width: auto;
     object-fit: cover;
     position: absolute;
     top:-100%; left:0;
@@ -51,3 +51,5 @@
   .partnership  .box-container .box:hover .content{
     transform: translateY(100%);
   }
+
+  
