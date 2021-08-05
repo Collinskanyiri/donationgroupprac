@@ -8,7 +8,7 @@ JOSEPH
 
 ## Description: 
 This is a web application to raise contributions to various charitable organizaations on one platform.
-one can aslo volunteer or sponsor to a cause on the platform.
+one can also volunteer or sponsor to a cause on the platform.
 
 ## setup & installation instructions
 * Open the GitHub Repository
