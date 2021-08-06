@@ -21,3 +21,6 @@ document.getElementById("sponsor-btn").onclick = function() {
 document.getElementById("submit-btn").onclick = function() {
     alert("Thank you for your submission");
 };
+document.getElementById("Donate-btn").onclick = function() {
+    alert("Thank you for your donation");
+};
