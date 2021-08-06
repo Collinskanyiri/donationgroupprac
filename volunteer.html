@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Join the team to help save a life. Volunteer today to help improve the lives of those who need help.">
+    <title>Join Us At Fadhili Foundation</title>
+    <link rel='shortcut icon' href='https://unsplash.com/photos/SPS796v4KmM/download?force=true&w=1920.png' type='image/x-icon' />
+    <link rel="stylesheet" href="../CSS/volunteer.css">
+
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.2.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- ALL CODES GOES HERE -->
+    <header>
+        <nav>
+            <div class="mobile">
+                <ul id="nav-items">
+                    <a href="javascript:void(0);" class="icon" onclick="displayNavItems()">
+                        <i class="fa fa-times"></i>
+                    </a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Partnership.html">Partnership</a></li>
+                    <li><a href="volunteer.html" class="active">Volunteer/Sponsor</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="talk-to-us.html">Talk To Us</a></li>
+                </ul>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="displayNavItems()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div class="writeup_form">
+        <div class="writeup">
+            <h1 class="active">Join Us</h1>
+            <p class="content">We kindly appreiate you for joining our foundation.. There is much going on in the world and we do alot to help the involved. With your help we believe we can even reach more people
+            </p>
+        </div>
+        <form class="form-style" id="volunteer-form">
+            <h3 class="h3">Volunteer Information</h3>
+            <p class="sub">Kindly fill in your correct details</p>
+            <div class="form_grid">
+                <div class="left_part">
+                    <label for="firstName" class="b">First Name:</label>
+                    <input type="text" name="first_name" id="firstName" class="input b" required />
+                    <label for="lastName" class="b">Last Name</label>
+                    <input type="text" name="last_name" id="lastName" class="input b" required />
+                    <label for="email" class="b">E-mail:</label>
+                    <input type="email" name="email" class="input b" id="email" required />
+                </div>
+                <div class="right_part">
+                    <label for="phoneNo" class="b">Phone Number:</label>
+                    <input type="phone" name="phoneNo" class="input b" id="phoneNo" required />
+                    <label for="country" class="b">Location:</label>
+                    <input type="text" name="country" class="input b" id="location" required />
+
+                </div>
+            </div>
+            <label for="text_feild" class="b">Comment (optional):</label>
+            <textarea name="comment" id="textArea" cols="30" rows="10"></textarea>
+
+            <button type="submit" id="volunter-btn" onClick="VolunteerMessage">Volunteer</button>
+
+
+
+
+        </form>
+        <form class="form-style">
+            <h3 class="h3">Sponsor Information</h3>
+            <p class="sub">Kindly fill in your correct details</p>
+            <div class="form_grid">
+                <div class="left_part">
+                    <label for="OrganizationName" class="b">Organization Name:</label>
+                    <input type="text" name="Organization_name" id="OrganizationName" class="input b" required />
+                    <label for="email" class="b">E-mail:</label>
+                    <input type="email" name="email" class="input b" id="email" required />
+                </div>
+                <div class="right_part">
+                    <label for="phoneNo" class="b">Phone Number:</label>
+                    <input type="text" name="phoneNo" class="input b" id="phoneNo" required />
+                    <label for="country" class="b">Location:</label>
+                    <input type="text" name="country" class="input b" id="location" required />
+
+                </div>
+            </div>
+            <label for="text_feild" class="b">Comment (optional):</label>
+            <textarea name="comment" id="textArea" cols="30" rows="10"></textarea>
+
+            <button type="submit" id="sponsor-btn">Sponsor</button>
+
+    </div>
+    </form>
+
+    </div>
+
+    <script src="Js/script.js"></script>
+
+</body>
+
+
+</html>
