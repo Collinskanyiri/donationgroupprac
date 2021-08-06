@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="talk to us page at Fadhili foundation">
     <link rel='shortcut icon' href='https://unsplash.com/photos/9aAr_EFqYdc/download?force=true&w=1920.png' type='image/x-icon' />
-    <link rel="stylesheet" href="../css/talk-to-us.css">
+    <link rel="stylesheet" href="../CSS/talk-to-us.css">
+
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.2.95/css/materialdesignicons.min.css">
     <link href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans" rel="stylesheet">
     <title>Talk to Us</title>
@@ -65,7 +66,7 @@
             </div>
         </div>
 
-        <form action="/action_page.php" class="label">
+        <form class="label" id="InputForm">
 
             <input type="text" name="name" id="Name" placeholder="Full Name" required><br>
 
@@ -73,7 +74,8 @@
 
             <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Talk to us" required> </textarea>
 
-            <button type="submit" class="submit">Submit</button>
+            <button type="submit" class="submit" id="submit-btn">Submit</button>
+
 
         </form>
 
@@ -82,21 +84,7 @@
 
     </div>
 
-
+    <script src="Js/script.js"></script>
 </body>
-<script>
-    function displayNavItems() {
-        var navToggle = document.getElementById("nav-items");
-        if (navToggle.style.display === "block") {
-            navToggle.style.display = "none";
-        } else {
-            navToggle.style.display = "block";
-        }
-    };
-
-    function openForm() {
-        document.getElementById("myForm").style.display = "block";
-    }
-</script>
 
 </html>
